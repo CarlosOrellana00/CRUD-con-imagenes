@@ -33,8 +33,7 @@
             $sql = "SELECT * FROM celulares";
             $resultado = $conexion->query($sql);
 
-            while($file - $resultado->fetch_assoc()){ ?>
-
+            while ($fila = $resultado->fetch_assoc()) { ?>
               <tr>
                 <th scope="row"> <?php echo $fila['id']?></th>
                 <th><?php echo $fila['nombre']?></th>
