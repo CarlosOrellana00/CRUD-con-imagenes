@@ -28,24 +28,24 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
+          <?php
+            include ="assets/conexion/conexion.php";
+            $sql = "SELECT * FROM celulares";
+            $resultado = $conexion->query($sql);
+
+            while($file - $resultado->fetch_assoc()){ ?>
+
+              <tr>
+                <th scope="row"> <?php echo $fila['id']?></th>
+                <th><?php echo $fila['nombre']?></th>
+                <th><?php echo $fila['descripcion']?></th>
+                <td><img style="width: 200px;" src="data:image/jpg;base64,<?php echo base64_encode($fila['imagen'])?>" alt=""></td>
+                <td>
+                  <a href="" class="btn btn-danger">Editar</a>
+                  <a href="" class="btn btn-danger">Eliminar</a>
+                </td>
+              </tr>
+          <?php }?>
         </tbody>
       </table>
     </div>
