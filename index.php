@@ -29,7 +29,7 @@
         </thead>
         <tbody>
           <?php
-            include ="assets/conexion/conexion.php";
+            include 'assets/php/connection.php';
             $sql = "SELECT * FROM celulares";
             $resultado = $conexion->query($sql);
 
