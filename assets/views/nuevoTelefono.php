@@ -15,20 +15,20 @@
     <br>
       <h1>Nuevo Telefono</h1>
     <br>
-    <form action="agregarTelefono.php" method="POST" enctype="multipart/form-data">
+    <form action="../php/agregarTelefono.php" method="POST" enctype="multipart/form-data">
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Nombre Telefono</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" name="Nombre">
+        <input type="text" class="form-control" id="exampleInputEmail1" name="nombre">
       </div>
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Descripcion</label>
-        <input type="text" class="form-control" name="Descripcion">
+        <input type="text" class="form-control" name="descripcion">
       </div>
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Imagen</label>
-        <input type="File" class="form-control" name="Imagen">
+        <input type="File" class="form-control" name="imagen">
       </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="submit" class="btn btn-success">Agregar</button>
         <a href="../../index.php" class="btn btn-info">Regresar</a>
     </form>
 
