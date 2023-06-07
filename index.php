@@ -43,7 +43,7 @@
                 <th><?php echo $fila['descripcion']?></th>
                 <td><img style="width: 200px;" src="data:image/jpg;base64,<?php echo base64_encode($fila['imagen'])?>" alt=""></td>
                 <td>
-                  <a href="" class="btn btn-warning"> Editar <i class="fa-solid fa-user-pen"></i></a>
+                  <a href="assets/views/editandoPersonaje.php?id=<?php echo $fila["id"]?>" class="btn btn-warning"> Editar <i class="fa-solid fa-user-pen"></i></a>
                   <a href="assets/php/eliminarPersonaje.php?id=<?php echo $fila["id"]?>" class="btn btn-danger">Eliminar <i class="fa-solid fa-user-xmark"></i></a>
                 </td>
               </tr>
