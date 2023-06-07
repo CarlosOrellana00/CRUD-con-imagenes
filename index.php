@@ -16,15 +16,15 @@
   </head>
   <body>
     <div class="containter">
-      <h1 class="p-3 text-center">Listado de Telefonos</h1>
+      <h1 class="p-3 text-center">Listado de Personajes</h1>
     </div>
     <div class="container">
-      <a href="assets/views/nuevoTelefono.php" class="btn btn-success">Agregar Telefono <i class="fa-solid fa-user-plus"></i></a>
+      <a href="assets/views/nuevoPersonaje.php" class="btn btn-success">Agregar <i class="fa-solid fa-user-plus"></i></a>
       <hr>
-      <table class="table">
+      <table class="table table-striped">
         <thead>
           <tr>
-            <th scope="col">#</th>
+            <th scope="col">N°</th>
             <th scope="col">Nombre</th>
             <th scope="col">Descripcion</th>
             <th scope="col">Imagen</th>
@@ -43,8 +43,8 @@
                 <th><?php echo $fila['descripcion']?></th>
                 <td><img style="width: 200px;" src="data:image/jpg;base64,<?php echo base64_encode($fila['imagen'])?>" alt=""></td>
                 <td>
-                  <a href="" class="btn btn-warning">Editar <i class="fa-solid fa-user-pen"></i></a>
-                  <a href="" class="btn btn-danger">Eliminar <i class="fa-solid fa-user-xmark"></i></a>
+                  <a href="" class="btn btn-warning"> Editar <i class="fa-solid fa-user-pen"></i></a>
+                  <a href="assets/php/eliminarPersonaje.php?id=<?php echo $fila["id"]?>" class="btn btn-danger">Eliminar <i class="fa-solid fa-user-xmark"></i></a>
                 </td>
               </tr>
           <?php }?>

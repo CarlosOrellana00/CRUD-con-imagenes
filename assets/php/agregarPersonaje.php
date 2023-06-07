@@ -1,13 +1,11 @@
 <?php
   include "connection.php";
 
-  $nombretelefono = $_POST["Nombre"];
-  $descripciontelefono = $_POST["Descripcion"];
-  $imagen = addslashes(file_get_contents($_FILES['Imagen']['tmp_name']));
+  $nombretelefono = $_POST["nombre"];
+  $descripciontelefono = $_POST["descripcion"];
+  $imagen = addslashes(file_get_contents($_FILES['imagen']['tmp_name']));
 
   $sql = "INSERT INTO celulares (nombre, descripcion, imagen) VALUES ('$nombretelefono','$descripciontelefono','$imagen')";
-
-  // robert','1'); drop table celulares; --
 
   $resultado = $conexion->query($sql);
 
@@ -15,6 +13,7 @@
     header('Location: ../../index.php');
     echo $sql;
   }else {
-    echo $conexion->error;
+    echo "No se ha podido agregar el personaje";
+    // echo $conexion->error;
   }
 ?>

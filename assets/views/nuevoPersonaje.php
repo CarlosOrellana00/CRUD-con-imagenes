@@ -14,22 +14,22 @@
 </head>
 <body>
   <div class="container">
-    <h1 class="p-3 text-center">Nuevo Telefono</h1>
-    <form action="../php/agregarTelefono.php" method="POST" enctype="multipart/form-data">
+    <h1 class="p-3 text-center">Nuevo Personaje</h1>
+    <form action="../php/agregarPersonaje.php" method="POST" enctype="multipart/form-data">
       <div class="mb-3">
-        <label class="form-label">Nombre Telefono</label>
-        <input type="text" class="form-control" name="Nombre">
+        <label class="form-label">Nombre Personaje</label>
+        <input type="text" class="form-control" name="nombre">
       </div>
       <div class="mb-3">
         <label class="form-label">Descripcion</label>
-        <input type="text" class="form-control" name="Descripcion">
+        <input type="text" class="form-control" name="descripcion">
       </div>
       <div class="mb-3">
         <label class="form-label">Imagen</label>
-        <input type="File" class="form-control" name="Imagen" required>
+        <input type="File" class="form-control" name="imagen" required>
       </div>
-        <button type="submit" class="btn btn-success">Agregar <i class="fa-solid fa-floppy-disk"></i></button>
-        <a href="../../index.php" class="btn btn-info">Regresar <i class="fa-solid fa-arrow-left-long"></i></a>
+        <button type="submit" class="btn btn-success">Agregar Personaje <i class="fa-solid fa-floppy-disk"></i></button>
+        <a href="../../index.php" class="btn btn-info">Regresar a la lista <i class="fa-solid fa-arrow-left-long"></i></a>
     </form>
 
   </div>
