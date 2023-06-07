@@ -9,27 +9,27 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <!-- icono -->
   <link rel="shortcut icon" href="assets/icons/icon.png">
+   <!-- font-awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <div class="container">
-    <br>
-      <h1>Nuevo Telefono</h1>
-    <br>
+    <h1 class="p-3 text-center">Nuevo Telefono</h1>
     <form action="../php/agregarTelefono.php" method="POST" enctype="multipart/form-data">
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Nombre Telefono</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" name="nombre">
+        <label class="form-label">Nombre Telefono</label>
+        <input type="text" class="form-control" name="Nombre">
       </div>
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Descripcion</label>
-        <input type="text" class="form-control" name="descripcion">
+        <label class="form-label">Descripcion</label>
+        <input type="text" class="form-control" name="Descripcion">
       </div>
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Imagen</label>
-        <input type="File" class="form-control" name="imagen">
+        <label class="form-label">Imagen</label>
+        <input type="File" class="form-control" name="Imagen" required>
       </div>
-        <button type="submit" class="btn btn-success">Agregar</button>
-        <a href="../../index.php" class="btn btn-info">Regresar</a>
+        <button type="submit" class="btn btn-success">Agregar <i class="fa-solid fa-floppy-disk"></i></button>
+        <a href="../../index.php" class="btn btn-info">Regresar <i class="fa-solid fa-arrow-left-long"></i></a>
     </form>
 
   </div>
