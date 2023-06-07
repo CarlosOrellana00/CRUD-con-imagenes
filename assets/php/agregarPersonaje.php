@@ -11,7 +11,7 @@
 
   if ($resultado) {
     header('Location: ../../index.php');
-    echo $sql;
+    // echo $sql;
   }else {
     echo "No se ha podido agregar el personaje";
     // echo $conexion->error;
